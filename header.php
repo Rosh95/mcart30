@@ -30,19 +30,21 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/aos.css");
    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
 
-   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/aos.js");
-   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/main.js");
    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-3.3.1.min.js");
+
+   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/popper.min.js");
+   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.min.js");
+   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/owl.carousel.min.js");
+   Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/mediaelement-and-player.min.js");
+
  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-migrate-3.0.1.min.js");
  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-ui.js");
- Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/popper.min.js");
- Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap.min.js");
- Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/owl.carousel.min.js");
- Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/mediaelement-and-player.min.js");
  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.stellar.min.js");
  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.countdown.min.js");
  Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.magnific-popup.min.js");
- Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap-datepicker.min.js");?>
+ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/bootstrap-datepicker.min.js");
+ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/aos.js");
+ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/main.js");?>
 
 
 
@@ -80,7 +82,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/include/phone.php"
 	)
-);?></span></a>
+);?> </span></a>
               
               <a href="#"><span class="text-black fl-bigmug-line-email64"></span> <span class="d-none d-md-inline-block ml-2"> <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
@@ -91,25 +93,21 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/include/email.php"
 	)
-);?></span></a>
+);?> </span></a>
             </p>  
           </div>
            <div class="col-6 col-md-6 text-right">
-            <a href="#" class="mr-3"><span class="text-black icon-facebook"></span></a>
-            <a href="#" class="mr-3"><span class="text-black icon-twitter"></span></a>
-            <a href="#" class="mr-0"><span class="text-black icon-linkedin"></span></a>
-          </div>
-          <?$APPLICATION->IncludeComponent(
+           <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
-	".default",
+	"",
 	Array(
 		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
-		"COMPONENT_TEMPLATE" => ".default",
 		"EDIT_TEMPLATE" => "",
-		"PATH" => "/include/icon.php"
+		"PATH" => "/include/social_network_icons.php"
 	)
 );?>
+          </div>
         </div>
       </div>
       
@@ -125,7 +123,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
-		"PATH" => "/include/logo.php"
+		"PATH" => "/include/title.php"
 	)
 );?><span class="text-danger">.</span></strong></a></h1>
             <!-- <$APPLICATION->IncludeComponent(

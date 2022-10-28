@@ -18,7 +18,7 @@
 		"EDIT_TEMPLATE" => "",
 		"PATH" => "/include/adout.php"
 	)
-);?></p>
+);?></p> 
             </div>
           </div>
 
@@ -68,7 +68,7 @@
           <div class="col-lg-4 mb-5 mb-lg-0">
             <h3 class="footer-heading mb-4">Follow Us</h3>
                 <div>
-                <?$APPLICATION->IncludeComponent(
+             <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
 	Array(
@@ -85,9 +85,6 @@
           <div class="col-md-12">
              <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-             Copyright &copy;<? echo date("Y")?> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a> 
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-             </p>
             <?$APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"",
@@ -95,9 +92,13 @@
 		"AREA_FILE_SHOW" => "file",
 		"AREA_FILE_SUFFIX" => "inc",
 		"EDIT_TEMPLATE" => "",
-		"PATH" => "/include/cope.php"
+		"PATH" => "/include/copyright.php"
 	)
 );?>
+             
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+             </p>
+
           </div>
           
         </div>
